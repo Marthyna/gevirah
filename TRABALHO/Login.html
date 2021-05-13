@@ -1,0 +1,86 @@
+<!--
+Nome do Programa: Trabalho 2º Trimestre
+Data: 11/09/2017 
+Nome: Marthyna Weber-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Wanderlust Turismo</title>
+		<meta charset="utf-8">
+         <link href="https://fonts.googleapis.com/css?family=Amatica+SC|Assistant:200|Bungee+Shade|Cinzel+Decorative|Fjalla+One|Trochut" rel="stylesheet">
+	</head>
+	<body>
+		<div align="center">
+            <table border=0 bordercolor=black cellspacing=0 cellpadding=0 width=100% height=100%> <!--Tabela que engloba a página inteira-->
+                <tr bgcolor=#2B3253>
+                    <td width="373" height="150"> <!--Cabeçalho-->
+                        <div align="center" style="margin-left: 10px"><font color=#E6E6E6 face="Cinzel Decorative" size=6>Wanderlust</font></div>
+                        <div align="center" style="margin-left: 8px"><font color=#E6E6E6 face="Assistant" size=3>Turismos e Viagens</font></div>
+                    </td>
+                    <td width="731" height="150">
+                        <table border=0 width=100% cellspacing=60> <!--Tabela do menu de opções-->
+                            <tr>
+                                <td><div align="center"><font size=5 color=#E6E6E6 face="Assistant"><a href="Home.html">Início</a></font></div></td> <!--Colunas da tabela do menu de opções (ou opções em si)-->
+                                <td><div align="center"><font size=5 color=#E6E6E6 face="Assistant"><a href="Planeje.php">Planeje sua Viagem</a></font></div></td>
+                                <td><div align="center"><font size=5 color=#E6E6E6 face="Assistant"><a href="Cadastro.html">Login e Cadastro</a></font></div></td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td width="496" height="150"></td>
+                </tr>
+                <tr>
+                    <td colspan=3 width="100%" height="228" background=images/banner2.png></td> <!--Banner-->
+                </tr>
+                <tr>
+                    <style> 
+                        a{ /* Estlização do link */
+                            color: white; 
+                            text-decoration: none;
+                            font-family: "Assistant";
+                            font-weight: bold;
+
+                        }
+                        a:hover{ /*Estilização do link com mouse por cima*/
+                            text-decoration: none;
+                            color: #9da7d4;
+                        }
+                    </style>
+                    <td colspan=3 width="100%" height="590">
+                        <table border=0 height=100% width=50% align="left" style="margin-left:25%">
+                            <tr>
+                                <td bgcolor=#2B3253 style="padding-left:10px">                                
+                                    <h2><font face="Assistant" color=#2B3253><a href="Cadastro.html">Cadastro</a></font></h2>
+                                </td>                                
+                                <td style="padding:20px" bgcolor=#2B3253>                                
+                                    <h2><font face="Assistant" color=#2B3253><a href="Login.html">Login</a></font></h2>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan=20 colspan="2" style="padding-bottom:300px">
+                                    <div align="right">
+                                        <form action="Login.php" method="post"> <!-- Chama o arquivo .php correspondente ao login -->
+                                            <font size=4 face="Arial">
+                                            <p>Nome: <input type="text" name="nome" size=29 style="height: 30px;"></p>
+                                            <p>E-mail: <input type="email" name="email" size=29 style="height: 30px;"></p>
+                                            <p>Senha: <input type="password" name="senha" size=29 style="height: 30px;"></p>                                       
+                                            <p><input type="submit" name="logar" value="Entrar" style="height: 30px;" size=20></p></font> <!--Botão submit que leva à pagina php -->
+                                        </form>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>                        
+                    </td> <!--Corpo-->
+                </tr>
+                <tr bgcolor=#2B3253>
+                    
+                    <td width="731" height="150"></td>
+                    <td width="496" height="150"></td>
+                    <td width="373" height="150"> <!--Cabeçalho-->
+                        <div align="center" style="margin-left: 10px"><font color=#E6E6E6 face="Cinzel Decorative" size=6>Wanderlust</font></div>
+                        <div align="center" style="margin-left: 8px"><font color=#E6E6E6 face="Assistant" size=3>Turismos e Viagens</font></div>
+                    </td>
+                </tr>                
+            </table>
+        </div>        
+	</body> 
+</html>

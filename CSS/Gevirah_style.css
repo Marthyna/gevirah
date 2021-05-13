@@ -1,0 +1,937 @@
+* {box-sizing:border-box}
+
+#container{
+    width: 100%;
+    margin:auto;
+    background-color: white;    
+    border-style: hidden;
+    height:auto;
+}
+#linhasuperior{
+    width: 100%;
+    height: 20px;
+    background-color: #FFCCCC;
+    border-style: hidden;
+    margin-bottom: 1%;
+}
+#containermenu{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    max-width: 100%;
+}
+
+.dropbtn {
+    background-color: white;
+    color: dimgray;
+    padding: 10px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    float: left;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;    
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1em;
+}
+.dropdown-content a:hover{
+    text-decoration: none;
+    background-color: lightgrey;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: #FCE4EA;
+}
+
+img[id=login_icon]{
+    width: auto;
+    height: auto;
+    float: left;
+    margin-left: 1%;
+}
+img[id=wishlist_icon]{
+    width: auto;
+    height: auto;
+    float: left;
+    margin-left: 2%;
+}
+img[id=logo]{
+    width: auto;
+    height: auto;
+    margin-left: 30%;
+    position: relative;
+}
+
+#container_buscart{
+    width: 27%;
+    height: auto;
+    float: right;
+    margin:auto;
+}
+input[class=pesquisa] {
+    width: 61%;
+    height: 47.8px;
+    float: left;
+    padding: 0.65%;
+    font-family: 'Exo',sans-serif;
+    font-size: 0.8em;
+    margin-left: 2%;
+}
+img[id=lupa]{
+    width: auto;
+    height: auto;
+    float: left;
+    margin-top:1.5%;
+}
+#linha_bc{
+    height: 47.8px;
+    width: 0.5%;
+    background-color: #BDBFC1;
+    float: left;
+    margin-left: 3.4%;
+    position: relative;
+}
+#carrinho{
+    width: 20%;
+    height: auto;
+    max-height: 47.8px;
+    background-color: #E6E7E8;
+    margin-left: 3.1%;
+    float: left;
+    padding: 0.3%;
+    position: relative;
+    padding-bottom: 1%;
+}
+img[id=carrinho_imagem]{
+    width: auto;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    float:left;
+    margin-top: 6%;
+    margin-left: 4%;
+}
+a[id=carrinho_num]{
+    width: auto;
+    height: auto;
+    text-align: center;
+    float:left;
+    margin-left: 25%;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 200%;
+    margin-top: 2.5%;
+    text-decoration: none;
+    color: black;
+}    
+
+#menuinicial {
+    background-color: white;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    border-style: hidden;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-width: thin;
+    border-bottom-width: thin;
+    border-top-color: #BDBFC1;
+    border-bottom-color: #BDBFC1;
+    margin-top: 2%;
+    max-width: 100%;
+}
+#menuinicial .dropdown {
+    width: auto;
+    height: auto;
+    float: left;
+    margin-left: 6.8%;
+    text-align: center;
+    padding-top: 1%;
+    font-family: 'Cinzel', serif;
+    font-size: 1em;
+    text-decoration: none;
+}
+#menuinicial .dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;    
+}
+#menuinicial .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1em;
+    text-align: left;
+}
+#menuinicial .dropdown-content a:hover {    
+    text-decoration: none;
+    background-color: lightgrey;
+}
+#menuinicial .dropdown:hover .dropdown-content {
+    display: block;
+}
+#menuinicial .dropdown:hover .dropbtn {
+    background-color: #FCE4EA;
+}
+
+img[id=bannerinicial]{
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#banneranuncio{
+    width: 30%;
+    height: 240px;
+    background-color: white;
+    float: left;
+    margin-left: 35.5%;
+    margin-top: -18%;
+    border-style: solid;
+    border-width: 1px;
+    opacity: 0.9;
+}
+#banneranunciorosa{
+    width: 95%;
+    height: 92%;
+    background-color: white;
+    margin: 2%;
+    border-color: #FCE4EA;
+    border-style: solid;
+    border-width: 2px;
+}
+#banneranunciotexto{
+    width: 75%;
+    height: 30%;
+    margin: auto;
+    margin-top: 10%;
+    background-color: white;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Cinzel', serif;
+}
+button[name=comprar]{
+    width: 30%;
+    height: 20%;
+    background-color: #FCE4EA;
+    margin-left: 34%;    
+    text-align: center;
+    font-size: 150%;
+    font-family: 'Open Sans Condensed', sans-serif;
+    border-style: hidden;
+}
+button[name=comprar] a{
+    text-decoration: none;
+    color: black;
+}
+button[name=comprar]:hover{
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+#container_bannersegundo{
+    width: 34%;
+    height: 700px;
+    float: left;
+    margin-left: 10.5%;
+    margin-top: 2%;
+}
+#bannersegundo{
+    width: 100%;
+    height:489px;
+    border-style: solid;
+    border-color: #F7ADAF;
+}
+img[id=bannersegundo_interno]{
+    width: 95%;
+    height: 92%;
+    margin: 2.6%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#container_bannersegundo_anuncio{
+    width: 60%;
+    height: auto;
+    margin-left: 20%;
+}
+#bannersegundo_anuncio{    
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    font-size: 1.6em;
+    margin-top: 4%;
+}
+button[name=comprar2]{
+    width: 40%;
+    height: auto;
+    background-color: #FCE4EA;
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin-left: 30%;
+    margin-top: 3%;
+    font-size: 1.1em;
+    padding: 3%;
+    border-style: hidden;
+}
+button[name=comprar2]:hover{
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+button[name=comprar2] a{
+    text-decoration: none;
+    color: black;
+}
+
+#novidades{
+    width: 85%;
+    height: auto;
+    border-color: #F7ADAF;
+    border-style: solid;
+    margin-top: 43%;
+    margin-left: 7.5%;
+}
+#novidades_texto{
+    width: 24.4%;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    font-size: 1.7em;
+    letter-spacing: 10px;
+    margin-left: 38%;
+    margin-top: 1%;
+}
+#container_novidades_banners{
+    width: 91%;
+    height: 245px;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+img[id=novidades_banners]{
+    width: auto;
+    height: 245px;
+    float: left;
+    margin-left: 1%;
+}
+
+#linha_servicos{
+    width: 100%;
+    max-width: 100%;
+    height: 3px;
+    background-color: #C4898B;
+    margin-top: 6%;
+}
+#container_serviços{
+    width: 100%;
+    height: 344px;
+    margin-top: 0.3%;
+    padding-top: 2%;
+    margin-bottom: 4%;
+}
+#produtoseservicos{
+    width: 33%;
+    height: 344px;
+    border-style: hidden;
+    border-right-style: solid;
+    border-right-color: #C4898B;
+    float: left;
+}
+img[id=servicos_imagem]{
+    width: auto;
+    height: auto;
+    margin-left: 42%;
+    margin-top: 3%;
+    margin-bottom: 1%;
+}
+#servicos_titulo{
+    width: 70%;
+    height: 30px;
+    margin-left: 15%;
+    margin-top: %;
+    text-align: center;
+    font-size: 1.51em;
+    font-family: 'Cinzel', serif;
+    color: #F7ADAF;
+    font-weight: bold;
+}
+#servicos_texto{
+    width: 85%;
+    max-width: 85%;
+    height: 17%;
+    margin: auto;
+    margin-top: 4%;
+    background-color: white;
+    text-align: center;
+    font-size: 0.86em;
+    font-family: 'Comfortaa', sans-serif;
+    color: dimgray;
+}
+button[name=confira]{
+    width: auto;
+    height: auto;
+    background-color: white;
+    text-align: center;
+    font-size: 0.87em;
+    font-family: 'Exo', sans-serif;
+    color: #773032;
+    margin-left: 40%;;
+    margin-top: 3.6%;
+    letter-spacing: 5px;
+    font-weight: 500;
+    border-style: hidden;
+}
+button[name=confira] a{
+    text-decoration: none;
+    color: #773032;
+}
+button[name=confira] a:hover{
+    text-shadow: 1px 1px 1px;
+}
+#valepresente{
+    width: 33%;
+    max-width: 33%;
+    height: 344px;
+    border-style: hidden;
+    border-right-style: solid;
+    border-right-color: #C4898B;
+    float:left;
+}
+#email{
+    width: 33%;
+    max-width: 33%;
+    height: 344px;
+    border-style: hidden;
+    float:left;
+}
+input[type=email]{
+    width: 52.77%;
+    max-width: 52.77%;
+    height: 41px;
+    background-color: white;
+    border-style: solid;
+    border-color: lightgray;
+    margin-left: 10%;
+    margin-top: 15%;
+    font-family: "Exo", sans-serif;
+    font-size: 0.9em;
+    color: grey;
+    padding-left: 1%;
+}
+button[type=submit][name=eemail]{
+    width: 16%;
+    height: 40px;
+    background-color: lightgray;    
+    float: left;
+    margin-left: 70%;
+    margin-top: -7.9%;
+    font-size: 0.98em;
+    border-style: hidden;
+}
+button[type=submit][name=eemail]:hover{
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+}
+button[type=submit][name=eemail] a{
+    text-decoration: none;
+    color: dimgray;
+    text-align: center;
+    font-family: 'Exo', sans-serif;
+    color: dimgray;
+}
+
+#linha_rodape{
+    width: 100%;
+    max-width: 100%;
+    height: 32px;
+    background-color: #F7ADAF;
+    float: left;
+}
+#container_rodape{
+    width: 100%;
+    height: 746px;
+    background-color: white;
+    padding-top: 5%;
+}
+img[id=logo_rodape]{
+    width: auto;
+    height: auto;
+    margin-left: 45%;
+}
+#menu_rodape{
+    width: 50%;
+    height: 290px;
+    background-color: white;
+    margin-left: 25%;
+    margin-top: 3%;
+}
+.vertical-menu {
+    float: left;
+    margin-top: 3%;
+    margin-left: 4%;
+}
+.vertical-menu a {
+    background-color: white; 
+    color: black; 
+    display: block; 
+    padding: 12px; 
+    text-decoration: none; 
+}
+.vertical-menu a:hover {
+    background-color: #ffe3e3; 
+}
+.vertical-menu a.active {
+    background-color: white; 
+    color: dimgray;
+    font-family: 'Cinzel',serif;
+    font-size: 1em;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    margin-bottom: 2%;
+}
+.vertical-menu a.links{
+    font-family: 'Exo',serif;
+    font-size: 0.85em;
+    color: dimgray;
+}
+#container_sociais{
+    width: 15%;
+    max-width: 50%;
+    height: auto;
+    background-color: transparent;
+    margin-left: 42.5%;
+}
+#sociais_texto{
+    width: 60%;
+    max-width: 60%;
+    height: auto;
+    color: #9f5658;
+    font-family: 'Abril Fatface', serif;
+    font-size: 1.6em;
+    text-align: center;
+    margin-left: 20%;
+    margin-top: 10%;
+}
+.fa {
+    padding: 5%;
+    text-align: left;
+    text-decoration: none;
+    margin-left: 13.5%;
+    margin-top: 10%;
+    border-radius: 100%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+    background: #F7ADAF;
+    color: white;
+    padding-left: 6%;
+    padding-right: 6%;
+}
+.fa-twitter {
+    background: #F7ADAF;
+    color: white;
+}
+.fa-instagram {
+    background: #F7ADAF;
+    color: white;
+}
+
+h2{
+    text-align: center;
+    font-family: "Cinzel",serif;
+    font-size: 2.5em;
+    color: #dd9b9d;
+    margin-top: 6%;
+}
+h3{
+    color: #c4898b;
+    font-family: "Cinzel",serif;
+    font-size: 1.4em;
+    margin-left: 4%;
+}
+h4{
+    color:#C4898B;
+    font-family: "Cinzel", serif;
+    font-size: 1.5em;
+    font-weight: 100;
+    margin-left: 3.5%;
+    margin-top: 9%;
+}
+h5{
+    width: 25%;
+    text-align: center;
+    color: #775455;
+    font-family: "Cinzel", serif;
+    font-size: 1.4em;
+    letter-spacing: 9px;
+    margin-left: 37.5%;
+}
+h6{
+    width: 80%;
+    font-family: "Cinzel", serif;
+    font-size: 1em;
+    margin-left: 10%;
+    margin-bottom: 1%;
+    font-weight: 100;
+}
+p{
+    color:#454545;
+    font-family: "Exo", sans-serif;
+    font-size: 0.8em;
+    text-align: justify;
+    margin-left: 3.5%;
+    margin-bottom: 3%;
+}
+a[id="voltar"]{
+    color:#454545;
+    font-family: "Exo", sans-serif;
+    font-size: 1em;
+    text-align: justify;
+    margin-left: 3.5%;
+    margin-bottom: 3%;
+    text-decoration: none;
+}
+a[id="visualizar"]{
+    color:#454545;
+    font-family: "Exo", sans-serif;
+    font-size: 1em;
+    margin-left: 10%;
+    float: left;
+    margin-top: 5%;
+    text-decoration: none;
+}
+
+#linha{
+    width: 88%;
+    height: 1px;
+    background-color: #dd9b9d;
+    float: right;
+    margin-top: -2.6%;
+}
+#linha_anel{
+    width: 90.5%;
+    height: 1px;
+    background-color: #dd9b9d;
+    float: right;
+    margin-top: -2.6%;
+}
+#container_slides{
+    width: 100%;
+    height: 300px;
+    padding-left: 4%;
+}
+#imagem_produtos{
+    width: 14%;
+    height: auto;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    float: left;
+    margin-left: 1.8%;
+}
+button[name=comprar_produtos]{
+    width: 8%;
+    height: 46px;
+    background-color: #FCE4EA;
+    margin-top: 15%;
+    float: left;
+    margin-left: -10.9%;
+    text-align: center;
+    font-size: 1em;
+    font-family: 'Open Sans Condensed', sans-serif;
+    border-style: hidden;
+}
+button[name=comprar_produtos] a{
+    text-decoration: none;
+    color: black;
+}
+button[name=comprar_produtos]:hover{
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+#container_sobrenos{
+    width: 80%;
+    height: 600px;
+    border-style: hidden;
+    border-top-style: solid;
+    border-top-width: medium;
+    border-bottom-color: #773032;
+    border-bottom-style: solid;
+    border-bottom-width: medium;
+    border-top-color: #773032;
+    margin-left: 10%;
+    margin-top: -1%;
+    margin-bottom: 4%;
+}
+#container_menu_sobrenos{
+    height: 597px;
+    width: 20%;
+    float: left;
+    border-style: hidden;
+    border-right-style: solid;
+    border-right-width: medium;
+    border-right-color: #773032;
+}
+#container_texto_sobrenos{
+    width: 80%;
+    height: 600px;
+    float:right;
+}
+ul {
+    list-style-type: none;
+    width: 90%;
+    padding: 0;
+    text-align: left;
+    margin-left: 10%;
+    margin-top: 35%;
+}
+li a {
+    display: block;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-family: "Cinzel", sans-serif;
+    font-size: 1.2em;
+}
+li a:hover {
+    text-decoration: none;
+    border-bottom-style: solid;
+    border-bottom-width: thin;    
+}
+
+#container_contato{
+    width: 80%;
+    height: 973px;
+    margin-left: 10%;
+    border-style: hidden;
+    border-top-style: solid;
+    border-top-color: #775455;
+    border-top-width: medium;
+    margin-bottom: 5%;
+}
+#container_contato_form{
+    width: 50%;
+    height: 967px;
+    border-style: hidden;
+    border-right-style: solid;
+    border-right-color: #775455;
+    border-right-width: medium;
+    float: left;
+}
+#container_contato_menu{
+    width: 50%;
+    height: 967px;
+    float: right;
+}
+input[type=text][name=nome]{
+    height: 63px;
+    border-color: lightgrey;
+    border-style: solid;
+    width: 80%;
+    margin-left: 10%;
+}
+input[type=text][name=sobrenome]{
+    height: 63px;
+    border-color: lightgrey;
+    border-style: solid;
+    width: 80%;
+    margin-left: 10%;
+}
+input[type=text][name=email]{
+    height: 63px;
+    border-color: lightgrey;
+    border-style: solid;
+    width: 80%;
+    margin-left: 10%;
+}
+input[type=text][name=ddd]{
+    height: 63px;
+    border-color: lightgrey;
+    border-style: solid;
+    width: 15%;
+    margin-left: 10%;
+}
+input[type=text][name=telefone]{
+    height: 63px;
+    border-color: lightgrey;
+    border-style: solid;
+    width: 60%;
+    margin-left: 4.4%;
+}
+input[type=text][name=comentario]{
+    height: 193px;
+    border-color: lightgrey;
+    border-style: solid;
+    width: 80%;
+    margin-left: 10%;
+}
+button[type=submit][name=enviar]{
+    width: 16%;
+    height: 63px;
+    background-color: lightgrey;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    border-style: hidden;
+    margin-left: 10%;
+    margin-top: 6.2%;
+    font-size: 0.98em;
+}
+button[type=submit][name=enviar]:hover{
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+#perguntas_frequentes_bordaext{
+    width: 80%;
+    margin-left: 10%;
+    height: 230px;
+    border-style: solid;
+    border-width: thin;
+    margin-top: 10%;
+    margin-bottom: 20%;
+}
+#perguntas_frequentes_bordaint{
+    width: 90.5%;
+    height: 173px;
+    margin: auto;
+    margin-top: 4.5%;
+    border-style: solid;
+    border-width: thin;
+    border-color: #F7ADAF;
+    text-align: center;
+    padding-top: 3%;
+}
+#perguntas_frequentes_bordaint a{
+    text-decoration: none;
+    color: black;
+}
+#sac{
+    width: 90.5%;
+    height: 173px;
+    margin: auto;
+    margin-top: 4.5%;
+    border-style: solid;
+    border-width: thin;
+    border-color: #F7ADAF;
+    text-align: center;
+    padding-top: 3%;
+    text-align: left;
+}
+
+a[id="em_construcao"]{
+    text-decoration: none;
+    margin-left: 42%;
+    color: black;    
+}
+
+@media (max-width: 900px) {
+    img[id=login_icon], img[id=wishlist_icon]{
+        width: 20px;
+    }
+    img[id=logo]{
+        width: 20%;
+    }
+    #container_buscart{
+        width: 90%;
+        float: none;        
+    }
+    #banneranunciotexto, button[name=comprar]{
+        font-size: 0.8em;
+        
+    }
+    #banneranuncio{
+        width: 40%;
+        margin-left: 30%;
+        height: 100px;
+    }
+    button[name=comprar]{
+        margin-top: 6%;
+        margin-left: 30%;
+        width: 40%;
+    }
+    #bannersegundo{
+        height: 200px;
+        margin-top: 10%;
+    }
+    #container_bannersegundo_anuncio{
+        font-size: 0.5em;
+    }
+    #novidades{
+        height: 150px;
+        margin-top: 70%;
+    }
+    #novidades_texto{
+        font-size: 0.8em;
+        height: 30px; 
+        width: 50%;
+        margin: auto;
+    }
+    img[id=novidades_banners]{
+        width: 50px;
+        height: 70px;
+    }
+    #container_novidades_banners{
+        height: auto;
+        position: absolute;
+        width: 70%;
+        margin-left: 5.5%;
+    }
+    img[id=servicos_imagem]{
+        width: 50px;
+    }
+    #servicos_titulo, #servicos_texto, button[name=confira],button[type=submit][name=eemail],input[type=email]{
+        font-size: 0.6em;
+    }
+    #container_serviços{
+        padding: 0;
+        position: absolute;
+    }
+    button[name=confira]{
+        margin-left: 23%;
+    }
+    input[type=email],button[type=submit][name=eemail]{
+        height: 20px;
+    }
+    #produtoseservicos, #valepresente, #email{
+        height: 200px;
+    }
+  }
+
+table.GeneratedTable {
+  width: 100%;
+  background-color: #ffffff;
+  border-collapse: collapse;
+  border-width: 2px;
+  border-color: #F7ADAF;
+  border-style: solid;
+  color: dimgray;
+  font-family: 'Comfortaa', sans-serif;
+}
+table.GeneratedTable td, table.GeneratedTable th {
+  border-width: 2px;
+  border-color: #F7ADAF;
+  border-style: solid;
+  padding: 3px;
+}
+table.GeneratedTable thead {
+  background-color: #F7ADAF;
+  font-family: 'Comfortaa', sans-serif;
+}
